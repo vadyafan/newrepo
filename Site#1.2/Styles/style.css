@@ -1,0 +1,617 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+div {
+	/*outline: 2px solid black;*/*/
+}
+
+.row:after {
+	display: block;
+	clear: both;
+	content: '';
+	}
+body {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow-x: hidden;
+	
+
+	
+
+}
+.boody {
+
+
+
+}
+.header {
+
+	outline: 0px solid black;
+	width: 100%;
+	
+	background-color: rgba(42, 44, 69, 0.9);
+	
+	max-height: 10%;
+
+	
+}
+
+.content0 {
+
+	width: 90%;
+	padding: 0 0 0 10%;
+	float: left;
+	
+}
+.content {
+	width: 85%;
+	
+	float: left;
+
+
+}
+.Registration1 {
+	width: 13%;
+	height: 150vh;
+	
+	float: left;
+	background-color: rgba(42, 44, 69, 0);
+	color:white;
+}
+.form1 {
+	width: 100%;
+	padding-top: 70%;
+	color: black;
+	
+	
+}
+.welcome img {
+width: 100%;
+height: auto;
+
+}
+
+#modal {
+	display: none;
+	position: fixed;
+	top: 30%;
+	left: 30%;
+	background-color: rgba(141, 184, 247, 0.8);;
+	height: 520px;
+	width: 30%;
+	color: black;
+	font-style: italic;
+	border-radius: 10px;
+	box-shadow: 0 0 300px rgba(0,0,0,0.8);
+
+}
+
+.form1 input {
+	width: 100%;
+}
+input {
+	margin: 10px;
+}
+select {
+	margin: 10px;
+}
+
+#modal:target{
+	display: block;
+
+}
+.modalreg {
+	padding-left: 30%;
+	
+
+
+}
+.test {
+
+	position: absolute;
+	text-align: center;
+
+
+}
+.test2 a:active {
+
+	margin-bottom: 100px;
+}
+
+
+.logo {
+	width: 60%;
+	padding-left: 15%;
+	float: left;
+	/*outline: 1px solid white;*/
+}
+.menu { 
+	width: 25%;
+	/*outline: 1px solid white;*/
+	/*padding-left: 65%;*/
+	float: left;
+	padding-top: 1%;	
+}
+button {
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+.s-layout li{
+	display: inline-block;
+	color: white;
+}
+.footer li{
+	display: inline-block;
+	color: white;
+}
+a{
+	display: block;
+	padding: 5px 10px;
+	border-radius: 5px;
+
+}
+.theme {
+	width: 80%;
+	
+	
+}
+p {
+	font-size:35px;
+	
+	width: 80%;
+	font-style: italic;
+}
+
+.text1 {
+	font-size:25px;
+	color:#000000;
+	font-style: italic;
+	padding-left:20%;
+	padding-top: 5%;
+	padding-bottom: none;
+	
+	
+	
+}
+.text2 {
+	font-size:25px;
+	color:#000000;
+	font-style: italic;
+	top: 33.5%;
+	padding-left:20%;
+	padding-bottom: none;
+	
+	
+	
+	
+}
+.image {
+	padding-top: 5%;
+	padding-left: 37%;
+	
+	
+}
+.about {
+	box-sizing: content-box;
+
+	
+}
+.spisok li {font-size:25px;
+	
+	font-style: italic;
+	color: black;*/
+
+
+}
+.block1 {
+	padding-left: 17%;
+	margin-left: 10%;
+	margin-top: 5%;
+
+	/*outline: 1px solid black;*/
+	width: 60%;
+	
+
+	margin-right: 5%; 
+	
+	}
+.block2 {
+	
+
+	/*outline: 1px solid black;*/
+
+	width: 60%; 
+	height: none;
+	margin-left: 10%;
+	margin-right: 0%;
+	padding-left: 17%;
+	margin-top: 5%;
+
+	
+}
+h1 {
+	font-size:35px;
+	
+
+    font-style: italic;
+	
+}
+p {
+	font-size:25px;
+	
+	font-style: italic;
+	
+}
+
+.map {
+	width: 30%;
+	margin: 0 auto;
+	float: left;
+}
+
+.map iframe{
+	width: 100%;
+	height: 200px;
+	padding-bottom: 10%;
+	margin-top: 5%;
+	margin-left: 13%;
+
+}
+
+.footer {
+
+		color: white;
+	width: 100%;
+	
+	background-color: rgba(42, 44, 69, 0.8);
+	margin-top:5%;
+	padding-top:2%; 
+
+
+	
+	
+}
+.contact {
+	float: left;
+	width: 20%;
+	margin-left: 10%;
+	
+
+	
+}
+.clients {
+	margin-left: 10%;
+	float: left;	
+	width: 30%;
+	
+}
+
+
+ Primary Styles 
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+/*body {
+   font-family: sans-serif;
+   font-size: 1em;
+   color: #333;
+}
+
+h1 {
+  font-size: 1.4em;
+} */
+
+em {
+   font-style: normal;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+} 
+
+ Layout 
+.s-layout {
+   display: flex;
+   width: 5%;
+   
+   float: left;
+}
+
+.s-layout__content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+}
+
+ Sidebar 
+.s-sidebar__trigger {
+   z-index: 2;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 4em;
+   background: #192b3c;
+}
+
+.s-layout__sidebar {
+	position: fixed;
+	top:0;
+}
+
+.s-sidebar__trigger > i {
+   display: inline-block;
+   margin: 1.5em 0 0 1.5em;
+   color: #000;
+}
+
+.s-sidebar__nav {
+   position: fixed;
+   top: 0;
+   left: -15em;
+   overflow: hidden;
+   transition:  .3s ease-in;
+   width: 15em;
+   height: 100%;
+   background: rgba(42, 44, 69, 0.8);
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus + .s-sidebar__nav,
+.s-sidebar__trigger:hover + .s-sidebar__nav {
+   left: 0;
+}
+
+.s-sidebar__trigger{
+	height: 100vh;
+}
+
+.s-sidebar__nav ul {
+   position: absolute;
+   top: 4em;
+   left: 0;
+   margin: 0;
+   padding: 0;
+   width: 15em;
+}
+
+.s-sidebar__nav ul li {
+   width: 100%;
+}
+
+.s-sidebar__nav-link {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 4em;
+}
+
+.s-sidebar__nav-link em {
+   position: absolute;
+   top: 50%;
+   left: 4em;
+   transform: translateY(-50%);
+}
+
+.s-sidebar__nav-link:hover {
+   background: rgba(42, 44, 69, 0.8);
+}
+
+.s-sidebar__nav-link > i {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: inline-block;
+   width: 4em;
+   height: 4em;
+}
+
+.s-sidebar__nav-link > i::before {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+ Mobile First 
+@media (min-width: 42em) {
+   .s-layout__content {
+      margin-left: 4em;
+   }
+   
+    Sidebar 
+   .s-sidebar__trigger {
+      width: 4em;
+   }
+   
+   .s-sidebar__nav {
+      width: 4em;
+      left: 0;
+   }
+   
+   .s-sidebar__nav:hover,
+   .s-sidebar__nav:focus,
+   .s-sidebar__trigger:hover + .s-sidebar__nav,
+   .s-sidebar__trigger:focus + .s-sidebar__nav {
+      width: 15em;
+   }
+}
+
+@media (min-width: 68em) {
+   .s-layout__content {
+      margin-left: 15em;
+   }
+   
+    Sidebar 
+   .s-sidebar__trigger {
+      display: none
+   }
+   
+   .s-sidebar__nav {
+      width: 15em;
+   }
+   
+   .s-sidebar__nav ul {
+      top: 1.3em;
+   }
+}
+
+/* Стили модального окна */
+.modal-header h2 {
+    color: #555;  
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1;    
+    margin: 0;
+}
+/* кнопка закрытия окна */
+.modal .btn-close {
+    color: #000;
+    cursor: pointer;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.modal .btn-close:hover {
+    color: red;
+}
+/* слой затемнения */
+.modal-wrap:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+}
+.modal-overlay {
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 102;
+}
+/* активация слоя затемнения и модального блока */
+.modal-open:checked ~ .modal-wrap:before,
+.modal-open:checked ~ .modal-wrap .modal-overlay {
+    display: block;
+}
+.modal-open:checked ~ .modal-wrap .modal-dialog {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    top: 20%;
+}
+/* элементы модального окна */
+.modal-dialog {
+    background: rgba(141, 184, 247, 0.8);
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    width: 80%;
+    max-width: 500px;
+    left: 50%;
+    top: -100%;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
+    -webkit-transform: translate(-50%, -500%);
+    -ms-transform: translate(-50%, -500%);
+    -o-transform: translate(-50%, -500%);
+    transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    -o-transition: -o-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+    z-index: 103;
+}
+.modal-body {
+  padding: 20px;
+  color: black;
+}
+.modal-body p {
+    margin: 0;
+}
+.modal-header,
+.modal-footer {
+    padding: 20px 20px;
+}
+.modal-header {
+    border-bottom: #eaeaea solid 1px;
+}
+.modal-header h2 {
+    font-size: 20px;
+    margin: 0;
+}
+.modal-footer {
+    border-top: #eaeaea solid 1px;
+    text-align: right;
+}
+/* адаптивные картинки в модальном блоке */
+.modal-body img { 
+    max-width: 100%;
+    height: auto;
+
+}
+/* кнопки */
+.btn {
+    background: darkgreen;
+    border: #555 solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: fixed;
+    top:90vh;
+    right: 1%;
+}
+.btn:hover, .btn:focus {
+    background: green;
+}
+.btn-primary {
+    background: #428bca;
+    border-color: #357ebd;
+    color: #fff;
+     background: darkgreen;
+    border: #555 solid 1px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    
+}
+.btn-primary:hover{
+    background: #66A1D3;
+}
+textarea {
+
+	width: 100%;
+	height: 100px;
+	margin-top: 5%;
+/*
+
+*/
