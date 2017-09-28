@@ -1,7 +1,10 @@
- 1й способ:
+ 1st method:
 SELECT 100.0*COUNT(DISTINCT id_R)/COUNT(DISTINCT id_T)
 FROM Merge
- 2й способ:
+ 2nd method:
 SELECT 100.0*COUNT(DISTINCT ID_R)/COUNT(*)
 FROM Merge
-
+ 3rd method:
+SELECT 100.0*(SELECT COUNT(DISTINCT id_R)
+ FROM Merge)/(SELECT COUNT(id_R)
+ FROM R)
