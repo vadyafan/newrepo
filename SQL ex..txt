@@ -1,4 +1,7 @@
-----
-select
-from
-where
+ 1й способ:
+SELECT 100.0*COUNT(DISTINCT id_R)/COUNT(DISTINCT id_T)
+FROM Merge
+ 2й способ:
+SELECT 100.0*COUNT(DISTINCT ID_R)/COUNT(*)
+FROM Merge
+
