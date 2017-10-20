@@ -1,0 +1,111 @@
+﻿Script started on пт, 20-жов-2017 21:03:04 +0300
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop$ mkdir testdir
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop$ cd testdir
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ touch test_{a..e}
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ vi
+
+
+
+
+#1/bin/sh
+
+
+echo "deleting..."
+
+cp /dev/null test_a
+
+cp /dev/null test_b
+
+cp /dev/null test_c
+
+cp /dev/null test_d
+
+cp /dev/null test_e
+
+echo "done"
+:wq deleting.sh
+
+"
+deleting.sh" [New File] 9 lines, 142 characters written
+
+
+
+
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ date > test_a & date > test_b & date > test_c & date > test_d & date >test_e
+
+[1] 2155
+
+[2] 2156
+
+[3] 2157
+
+[4] 2158
+
+[1]   Done                    
+date > test_a
+
+[2]   Done                    
+date > test_b
+
+[3]-  Done                    
+date > test_c
+
+[4]+  Done                    
+date > test_d
+
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ bash deleting.sh
+
+deleting...
+
+done
+
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ for test in $(find . -name "test*"); do date > $test; done
+
+п'ятниця, 20 жовтня 2017 21:10:17 +0300
+
+п'ятниця, 20 жовтня 2017 21:10:17 +0300
+
+п'ятниця, 20 жовтня 2017 21:10:17 +0300
+
+п'ятниця, 20 жовтня 2017 21:10:17 +0300
+
+п'ятниця, 20 жовтня 2017 21:10:17 +0300
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ bash deleting.sh
+
+deleting...
+
+done
+
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ date | tee test_{a..e}
+
+п'ятниця, 20 жовтня 2017 21:12:00 +0300
+
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ grep -ch 2017 test_{a..e} | wc -l
+
+5
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ echo "homework is done"
+
+homework is done
+
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop/testdir$ cd ../
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop$ rm -rf testdir
+
+
+grafic@grafic-HP-Compaq-8000-Elite-USDT-PC:~/Desktop$ exit
+
+exit
+
+
+Script done on пт, 20-жов-2017 21:15:02 +0300
